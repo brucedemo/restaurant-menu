@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<div class="panel">
+    <div class="left">
+        <h1>Category</h1>
+        <ul>
+            <li *ngFor="let cat of categories" (click)="handleClick(cat.short_name)">
+                {{cat.name}}
+            </li>
+        </ul>
+    </div>
+    <app-detail [type]='type'></app-detail>
+</div>

@@ -1,0 +1,5 @@
+<h2>Detail</h2>
+<div *ngIf="catetoryDetail.length===0">Please select a category</div>
+<ul *ngFor="let element of catetoryDetail">
+    <li *ngFor="let key of keys">{{element[key]}}</li>
+</ul>
