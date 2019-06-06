@@ -1,9 +1,13 @@
-<div class="panel">
+<div class="panel container">
     <div class="left">
-        <h1>Category</h1>
+        <h2>Menu Category</h2>
         <ul>
             <li *ngFor="let cat of categories" (click)="handleClick(cat.short_name)">
-                {{cat.name}}
+                
+               <font size = '2'>
+                    {{cat.name}}-({{cat.short_name}})
+               </font>
+            
             </li>
         </ul>
     </div>
